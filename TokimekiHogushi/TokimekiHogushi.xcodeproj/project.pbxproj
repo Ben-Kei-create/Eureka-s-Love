@@ -1,0 +1,14 @@
+// !$*UTF8*$!
+// Xcode project stub — open TokimekiHogushi.xcodeproj in Xcode 15+
+// Requires: iOS 17.0 deployment target, Swift 5.9
+// Capabilities: none required beyond standard SwiftUI app
+//
+// To bootstrap a real Xcode project from this source tree:
+//   1. File > New > Project > App (iOS, SwiftUI, Swift)
+//   2. Set Bundle ID: com.yourteam.tokimekihogushi
+//   3. Drag Sources/ and Resources/ into the project navigator
+//   4. Add Resources/Scenarios/ folder as a resource bundle
+//   5. Set Supported Interface Orientations: Portrait only
+//   6. Minimum Deployment: iOS 17.0
+//
+// Dependencies: none (pure SwiftUI + Foundation)

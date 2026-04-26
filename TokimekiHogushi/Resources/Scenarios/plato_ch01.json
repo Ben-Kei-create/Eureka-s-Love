@@ -1,0 +1,72 @@
+{
+  "scenarioId": "plato_ch01",
+  "heroineId": "plato",
+  "chapter": 1,
+  "title": "Shadows on the Wall",
+  "titleJP": "影しか見えない君へ",
+  "nodes": [
+    {
+      "id": "n001",
+      "speaker": "narrator",
+      "text": "図書室。プラトンが窓際の席で、古代ギリシャ語の原典を読んでいる。近づくと、視線も上げずに口を開いた。",
+      "choices": null,
+      "nextNodeId": "n002",
+      "isHogushiNode": false
+    },
+    {
+      "id": "n002",
+      "speaker": "heroine",
+      "text": "あなたが今見ているこの教室の風景は、すべて『影』に過ぎません。真の実在——イデアの世界には、あなたはまだ辿り着けていない。",
+      "choices": null,
+      "nextNodeId": "n003",
+      "isHogushiNode": false
+    },
+    {
+      "id": "n003",
+      "speaker": "player",
+      "text": null,
+      "choices": [
+        {
+          "id": "c003a",
+          "text": "イデアって……たとえば、どんなラーメンを食べても「本当に美味しいラーメン」のイメージには届かない、みたいな感じ？",
+          "effect": "hogushiAttempt",
+          "translationPower": 5,
+          "nextNodeId": "n004_success"
+        },
+        {
+          "id": "c003b",
+          "text": "影だとしても、この光が綺麗だと思うのは本物の感情じゃないかな。",
+          "effect": "hogushiAttempt",
+          "translationPower": 4,
+          "nextNodeId": "n004_partial"
+        }
+      ],
+      "nextNodeId": null,
+      "isHogushiNode": true
+    },
+    {
+      "id": "n004_success",
+      "speaker": "heroine",
+      "text": "…ラーメン。\n\n（わずかに動揺して本を閉じる）\n\n……その例えは、想定外でした。でも——そう、その「理想のラーメン」こそがイデアです。あなた、少し……面白いことを言いますね。",
+      "choices": null,
+      "nextNodeId": "n005_end",
+      "isHogushiNode": false
+    },
+    {
+      "id": "n004_partial",
+      "speaker": "heroine",
+      "text": "感情もまた、イデアの模倣です。……しかし、あなたがそれを言うのは、少し、予想外でした。",
+      "choices": null,
+      "nextNodeId": "n005_end",
+      "isHogushiNode": false
+    },
+    {
+      "id": "n005_end",
+      "speaker": "narrator",
+      "text": "【第一章 終了】\n\nプラトンが、初めて本から目を上げてあなたを見た。\n解きメキ度が上昇した。",
+      "choices": null,
+      "nextNodeId": null,
+      "isHogushiNode": false
+    }
+  ]
+}

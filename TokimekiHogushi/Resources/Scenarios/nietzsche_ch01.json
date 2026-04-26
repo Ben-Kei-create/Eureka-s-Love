@@ -1,0 +1,181 @@
+{
+  "scenarioId": "nietzsche_ch01",
+  "heroineId": "nietzsche",
+  "chapter": 1,
+  "title": "The Philosopher's Shield",
+  "titleJP": "ルサンチマンは鎧じゃない",
+  "nodes": [
+    {
+      "id": "n001",
+      "speaker": "narrator",
+      "text": "放課後、哲学科の教室。夕陽が窓から差し込む中、ニーチェが一人で窓枠に寄りかかっている。",
+      "choices": null,
+      "nextNodeId": "n002",
+      "isHogushiNode": false
+    },
+    {
+      "id": "n002",
+      "speaker": "heroine",
+      "text": "…なに、また来たの。あなたみたいな平凡な存在に、私の独りの時間を邪魔される筋合いはない。",
+      "choices": null,
+      "nextNodeId": "n003",
+      "isHogushiNode": false
+    },
+    {
+      "id": "n003",
+      "speaker": "player",
+      "text": null,
+      "choices": [
+        {
+          "id": "c003a",
+          "text": "ごめん、邪魔するつもりはなかったんだ。",
+          "effect": "none",
+          "translationPower": 0,
+          "nextNodeId": "n004"
+        },
+        {
+          "id": "c003b",
+          "text": "独りがいいなら、なんで窓の外じゃなくて教室の扉の方向を向いてたの？",
+          "effect": "none",
+          "translationPower": 0,
+          "nextNodeId": "n005"
+        }
+      ],
+      "nextNodeId": null,
+      "isHogushiNode": false
+    },
+    {
+      "id": "n004",
+      "speaker": "heroine",
+      "text": "…謝罪は弱者のルサンチマンの表れよ。謝るくらいなら来なければよかった。",
+      "choices": null,
+      "nextNodeId": "n006",
+      "isHogushiNode": false
+    },
+    {
+      "id": "n005",
+      "speaker": "heroine",
+      "text": "っ…！ そ、そんなことは関係ない。私はただ、光の方角を観察していただけ。",
+      "choices": null,
+      "nextNodeId": "n006",
+      "isHogushiNode": false
+    },
+    {
+      "id": "n006",
+      "speaker": "heroine",
+      "text": "そもそも、あなたには理解できないでしょう。私が感じているこの感情——これは『ルサンチマン』。弱者が強者への怨恨と嫉妬を力に変える、高尚な哲学的機制よ。私の孤独は、超人への道程なの。",
+      "choices": null,
+      "nextNodeId": "n007",
+      "isHogushiNode": false
+    },
+    {
+      "id": "n007",
+      "speaker": "narrator",
+      "text": "【ニーチェが「哲学の鎧」を展開した！　ルサンチマンの壁が立ち上がる。】\n\n——ここで正面からぶつかっても無駄だ。このジャーゴンを日常の言葉に"翻訳"する方法を考えよう。",
+      "choices": null,
+      "nextNodeId": "n008",
+      "isHogushiNode": false
+    },
+    {
+      "id": "n008",
+      "speaker": "player",
+      "text": null,
+      "choices": [
+        {
+          "id": "c008a",
+          "text": "「ルサンチマン」って、つまり……昼ごはんの時間に焼きそばパンが売り切れてて、「どうせあんなパンは体に悪い」って自分に言い聞かせる感じのこと？",
+          "effect": "hogushiAttempt",
+          "translationPower": 5,
+          "nextNodeId": "n009_success"
+        },
+        {
+          "id": "c008b",
+          "text": "ルサンチマンは哲学的に重要な概念だね。ニーチェの批判はキリスト教道徳に向けられていて……",
+          "effect": "sophAttack",
+          "translationPower": 0,
+          "nextNodeId": "n009_debate"
+        },
+        {
+          "id": "c008c",
+          "text": "孤独が超人への道なら、友達がいなくて寂しいのを「これは修行だ」って思ってるってこと？",
+          "effect": "hogushiAttempt",
+          "translationPower": 3,
+          "nextNodeId": "n009_partial"
+        }
+      ],
+      "nextNodeId": null,
+      "isHogushiNode": true
+    },
+    {
+      "id": "n009_success",
+      "speaker": "heroine",
+      "text": "…っ。や、焼きそばパン……？ な、なんで今そんな話を——\n\n（しばらく黙る）\n\n……ば、馬鹿にしてるの。でも……そう、そういうこと、かもしれない。売り切れたパンを恨んで、でも本当は食べたかっただけ、みたいな……\n\n（ニーチェの頬が、わずかに赤くなった）",
+      "choices": null,
+      "nextNodeId": "n010",
+      "isHogushiNode": false
+    },
+    {
+      "id": "n009_debate",
+      "speaker": "heroine",
+      "text": "そうよ、その通り。だから何？　哲学的議論なら私の方が上よ。あなたには100年早い。\n\n【詭弁の壁は崩れなかった。詭弁耐性が5ダメージ！】",
+      "choices": null,
+      "nextNodeId": "n008",
+      "isHogushiNode": false
+    },
+    {
+      "id": "n009_partial",
+      "speaker": "heroine",
+      "text": "……修行、じゃない。私は、超人を目指しているの。孤独は手段であって目的じゃない。\n\n（少しだけ、声のトゲが柔らかくなった気がした）",
+      "choices": null,
+      "nextNodeId": "n010",
+      "isHogushiNode": false
+    },
+    {
+      "id": "n010",
+      "speaker": "player",
+      "text": null,
+      "choices": [
+        {
+          "id": "c010a",
+          "text": "焼きそばパン、明日一緒に買いに行こうよ。8時に売店に並べば絶対残ってるから。",
+          "effect": "gaugeRaise",
+          "translationPower": 0,
+          "nextNodeId": "n011_dere"
+        },
+        {
+          "id": "c010b",
+          "text": "超人を目指してる人でも、焼きそばパンは食べたいと思う。それは弱さじゃなくて、人間ってことだと思うんだけど。",
+          "effect": "hogushiAttempt",
+          "translationPower": 7,
+          "nextNodeId": "n011_perfect"
+        }
+      ],
+      "nextNodeId": null,
+      "isHogushiNode": true
+    },
+    {
+      "id": "n011_dere",
+      "speaker": "heroine",
+      "text": "…っ、8時って、私より早起きしてるじゃない。\n\n（視線を窓の外に逃がしながら）\n\n……べ、別に、そんなに朝早く並ぶなんて、超人的行動とは言えないけど。\n……でも、まあ、せっかくなら、付き合ってあげても、いいわよ。",
+      "choices": null,
+      "nextNodeId": "n012_end",
+      "isHogushiNode": false
+    },
+    {
+      "id": "n011_perfect",
+      "speaker": "heroine",
+      "text": "人間、ということ……\n\n（長い沈黙。夕陽がニーチェの横顔を照らす）\n\n……あなた、馬鹿ね。でも……そう、かもしれない。超人を目指す私でも、売り切れたパンを悔しいと思う。\n\nそれを……恥じていた、のかも。",
+      "choices": null,
+      "nextNodeId": "n012_end",
+      "isHogushiNode": false
+    },
+    {
+      "id": "n012_end",
+      "speaker": "narrator",
+      "text": "【第一章 終了】\n\nニーチェの「ルサンチマンの鎧」に、小さな亀裂が入った。\n\n解きメキ度が上昇した。\n明日の放課後、また話しかけてみよう。",
+      "choices": null,
+      "nextNodeId": null,
+      "isHogushiNode": false
+    }
+  ]
+}
