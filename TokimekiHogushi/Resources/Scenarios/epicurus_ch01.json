@@ -1,0 +1,134 @@
+{
+  "scenarioId": "epicurus_ch01",
+  "heroineId": "epicurus",
+  "chapter": 1,
+  "title": "The Garden of Small Things",
+  "titleJP": "小さなアタラクシアの庭",
+
+  "_engineNotes": {
+    "archetypeDifficulty": 2,
+    "perfectThreshold": "translationPower + playerConceptTranslation >= 4",
+    "tutorialDesign": "translationPower:10 on the perfect choice guarantees success even at playerStat=1 (score=11 >= threshold 4). The wrong choice (translationPower:0) fails, teaching the player the mechanic safely."
+  },
+
+  "nodes": [
+    {
+      "id": "n001",
+      "speaker": "narrator",
+      "text": "園芸部の温室。エピクロスがテラコッタの鉢の前で、小さなバジルの苗に水をやっている。",
+      "choices": null,
+      "nextNodeId": "n002",
+      "isHogushiNode": false
+    },
+    {
+      "id": "n002",
+      "speaker": "heroine",
+      "text": "…あ、来たんですね。丁度いい。この子（バジル）を見てください。根がしっかり土を掴んでいる。これが『アタラクシア』——欲望に振り回されない、完全な平静の心の状態です。",
+      "choices": null,
+      "nextNodeId": "n003",
+      "isHogushiNode": false
+    },
+    {
+      "id": "n003",
+      "speaker": "system",
+      "text": "【チュートリアル】\n哲学の鎧が展開されました：「アタラクシア（精神的平静）」\n\n正面から「アタラクシアとは何ですか」と問うのは失敗です。\n日常の言葉に「翻訳」する選択肢を探しましょう。\n✨ マークがついた選択肢が「解きメキほぐし」の試みです。",
+      "choices": null,
+      "nextNodeId": "n004",
+      "isHogushiNode": false
+    },
+    {
+      "id": "n004",
+      "speaker": "heroine",
+      "text": "エピクロスの庭では、友人たちと質素な食事を分け合い、それ以上を求めなかった。快楽とは欲望の充足ではなく、苦痛の不在——それを理解できる人間は、とても少ない。",
+      "choices": null,
+      "nextNodeId": "n005",
+      "isHogushiNode": false
+    },
+    {
+      "id": "n005",
+      "speaker": "player",
+      "text": null,
+      "choices": [
+        {
+          "id": "c005_perfect",
+          "text": "「アタラクシア」って……お昼休みに屋上で、コンビニのおにぎり一個だけ食べながら、風が気持ちよくて、特に何も考えなくていい時間、みたいな？　何もしてないのに、なんか十分な感じがするやつ。",
+          "effect": "hogushiAttempt",
+          "translationPower": 10,
+          "nextNodeId": "n006_perfect"
+        },
+        {
+          "id": "c005_wrong",
+          "text": "アタラクシアはストア哲学とも共鳴していますよね。ピュロン的懐疑論の「エポケー」との関係で言うと……",
+          "effect": "sophAttack",
+          "translationPower": 0,
+          "nextNodeId": "n006_wrong"
+        }
+      ],
+      "nextNodeId": null,
+      "isHogushiNode": true
+    },
+    {
+      "id": "n006_perfect",
+      "speaker": "heroine",
+      "text": "……屋上で、おにぎり一個で。\n\n（しばらく黙って、バジルの葉を一枚そっと触る）\n\n……そう、それです。それが全部。\nもっと上等なものが必要だとか、誰かと比べなくちゃいけないとか——そういうのが、一切ない状態。\n\nあなた……意外と、分かるんですね。",
+      "choices": null,
+      "nextNodeId": "n007",
+      "isHogushiNode": false
+    },
+    {
+      "id": "n006_wrong",
+      "speaker": "heroine",
+      "text": "…ストアとエポケーを混同するのは、哲学の入門書でよくある誤りです。エピクロスは懐疑主義者ではなく、快楽主義者です。もう少し一次文献を読んでから来てください。\n\n【詭弁の壁】　議論で挑んでも、鎧は崩れなかった。詭弁耐性が5ダメージ。",
+      "choices": null,
+      "nextNodeId": "n005",
+      "isHogushiNode": false
+    },
+    {
+      "id": "n007",
+      "speaker": "player",
+      "text": null,
+      "choices": [
+        {
+          "id": "c007a",
+          "text": "今日の昼休み、そのおにぎりタイム、一緒にどうですか。屋上の日当たりいいとこ、知ってるんです。",
+          "effect": "gaugeRaise",
+          "translationPower": 0,
+          "nextNodeId": "n008_dere"
+        },
+        {
+          "id": "c007b",
+          "text": "そのバジル、今年の夏に使ったりするんですか？　ジェノベーゼとか作れそうで。",
+          "effect": "none",
+          "translationPower": 0,
+          "nextNodeId": "n008_soft"
+        }
+      ],
+      "nextNodeId": null,
+      "isHogushiNode": false
+    },
+    {
+      "id": "n008_dere",
+      "speaker": "heroine",
+      "text": "…屋上。\n\n（鉢を棚に戻しながら、少し間を置く）\n\n……まあ、この子に水をやってからなら。\n別に、あなたと行くのが目的じゃないけど——庭の外の「アタラクシア」を確認しておくのも、悪くないかもしれないので。",
+      "choices": null,
+      "nextNodeId": "n009_end",
+      "isHogushiNode": false
+    },
+    {
+      "id": "n008_soft",
+      "speaker": "heroine",
+      "text": "ジェノベーゼ……\n\n（思わず微笑む）\n\n……考えたことなかったです。この子が十分に育ったら、試してみましょうか。あなたも食べますか？",
+      "choices": null,
+      "nextNodeId": "n009_end",
+      "isHogushiNode": false
+    },
+    {
+      "id": "n009_end",
+      "speaker": "narrator",
+      "text": "【第一章 終了】\n\nエピクロスの「アタラクシアの鎧」に、小さな風穴が開いた。\n解きメキ度が上昇した。\n\n——彼女の庭には、もう少し通い続けてみよう。",
+      "choices": null,
+      "nextNodeId": null,
+      "isHogushiNode": false
+    }
+  ]
+}
